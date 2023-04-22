@@ -1,0 +1,130 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Setting global styles for repeated use */
+:root {
+    --soft-blue-color: hsl(215, 51%, 70%);
+    --cyan-color: hsl(178, 100%, 50%);
+    --darkblue-main-color: hsl(217, 54%, 11%);
+    --darkblue-shadow-color: hsl(218, 54%, 10%, 0.2);
+    --darkblue-shadow2-color: hsl(218, 54%, 12%, 0.6);
+    --darkblue-card-color: hsl(216, 50%, 16%); 
+    --darkblue-line-color: hsl(215, 32%, 27%); 
+    --white-color: hsl(0, 0%, 100%); 
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--darkblue-main-color);
+    margin: 0;
+    padding: 0;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.card-container {
+    background-color: var(--darkblue-card-color);
+    border:none;
+    border-radius: 10px;
+    width: 280px;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 40px 0 12px var(--darkblue-shadow-color), 0px 20px 0 30px var(--darkblue-shadow2-color);
+
+}
+
+.image-wrapper {
+    padding: 20px 20px;
+}
+
+.main-image {
+    border: none;
+    border-radius: 10px;
+    width: 240px;
+    height: auto;
+    display: block;
+
+}
+
+.heading {
+    color:var(--white-color);
+    font-size:18px;
+    padding-left: 25px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--cyan-color);
+    font-size: 14px;
+}
+
+.days-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--soft-blue-color);
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.footer-container p {
+    list-style-type: none;
+}
+
+
+.blue-text {
+    color: var(--soft-blue-color);
+}
+
+
+.avatar-image {
+    border: solid 1px white;
+    border-radius: 100px;
+    width: 28px;
+    height: 28px;
+}
+
+article {
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+
+/* Possible Media Query */
+@media  screen and (max-width: 375px) {
+    
+}
